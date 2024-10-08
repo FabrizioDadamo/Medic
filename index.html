@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage Studio Medico">
+    <meta name="keywords" content="studio medico, prenotazione appuntamenti, servizi medici">
+    <meta name="author" content="La Tua Classe">
+    <title>Studio Medico</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Imposta margini e padding a zero, font di base, immagine di sfondo fissa */
+        body {
+            margin: 0; /* Nessun margine per il body */
+            padding: 0; /* Nessun padding per il body */
+            font-family: 'Arial', sans-serif; /* Font impostato su Arial */
+            background: url('img/sfondo.jpg') fixed; /* Immagine di sfondo fissa */
+            background-size: cover; /* L'immagine di sfondo copre tutta l'area */
+            color: darkgray; /* Colore del testo impostato su grigio scuro */
+        }
+
+        /* Stile per l'intestazione */
+        header {
+            text-align: center; /* Centra il contenuto dell'header */
+            padding: 50px; /* Aggiunge 50px di spazio interno */
+            color: white; /* Colore del testo bianco */
+            background: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
+        }
+
+        /* Stile per la barra di navigazione */
+        nav {
+            text-align: center; /* Centra il contenuto della barra di navigazione */
+            background: black; /* Sfondo nero */
+            padding: 10px; /* Aggiunge 10px di spazio interno */
+        }
+
+            /* Stile per i link di navigazione */
+            nav a {
+                color: white; /* Colore del testo bianco per i link */
+                text-decoration: none; /* Rimuove la sottolineatura dai link */
+                margin: 0 15px; /* Aggiunge uno spazio orizzontale di 15px tra i link */
+            }
+
+        /* Stile per il form di prenotazione */
+        form {
+            max-width: 600px; /* La larghezza massima del form è 600px */
+            margin: 50px auto; /* Aggiunge un margine verticale di 50px e centra il form orizzontalmente */
+            padding: 20px; /* Aggiunge 20px di spazio interno */
+            background: rgba(255, 255, 255, 0.8); /* Sfondo bianco semi-trasparente */
+            border-radius: 10px; /* Arrotonda gli angoli del form */
+        }
+
+            /* Stile per le etichette del form */
+            form label {
+                display: block; /* Visualizza le etichette come blocchi */
+                margin-bottom: 8px; /* Aggiunge un margine inferiore di 8px */
+            }
+
+            /* Stile per i campi di input e selezione del form */
+            form input, form select {
+                width: 100%; /* Larghezza completa per gli input e selettori */
+                padding: 10px; /* Aggiunge 10px di spazio interno */
+                margin-bottom: 20px; /* Aggiunge un margine inferiore di 20px */
+                border: 1px solid lightgray; /* Bordo grigio chiaro */
+                border-radius: 5px; /* Arrotonda gli angoli degli input */
+            }
+
+            /* Stile per il pulsante di invio */
+            form button {
+                background: dodgerblue; /* Sfondo blu acceso per il pulsante */
+                color: white; /* Testo bianco sul pulsante */
+                padding: 10px 15px; /* Aggiunge 10px di padding verticale e 15px orizzontale */
+                border: none; /* Rimuove i bordi dal pulsante */
+                border-radius: 5px; /* Arrotonda gli angoli del pulsante */
+                cursor: pointer; /* Cambia il cursore in puntatore al passaggio del mouse */
+            }
+
+        /* Stile per le sezioni */
+        section {
+            text-align: center; /* Centra il testo e il contenuto della sezione */
+            padding: 50px; /* Aggiunge 50px di spazio interno */
+            background: rgba(255, 255, 255, 0.8); /* Sfondo bianco semi-trasparente */
+            border-radius: 10px; /* Arrotonda gli angoli delle sezioni */
+            margin: 20px; /* Aggiunge un margine di 20px intorno alle sezioni */
+        }
+
+            /* Stile per i titoli all'interno delle sezioni */
+            section h2 {
+                color: darkgray; /* Colore del testo grigio scuro per i titoli */
+            }
+
+            /* Rimuove i bullet point dagli elenchi e il padding */
+            section ul {
+                list-style: none; /* Rimuove i punti elenco */
+                padding: 0; /* Rimuove il padding interno */
+            }
+
+            /* Aggiunge uno spazio inferiore agli elementi dell'elenco */
+            section li {
+                margin-bottom: 10px; /* Aggiunge un margine inferiore di 10px */
+            }
+
+        /* Stile per il footer */
+        footer {
+            text-align: center; /* Centra il testo del footer */
+            padding: 20px; /* Aggiunge 20px di spazio interno */
+            background: black; /* Sfondo nero */
+            color: white; /* Testo bianco nel footer */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Studio Medico XYZ</h1>
+        <p>La tua salute è la nostra priorità</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Chi Siamo</a>
+        <a href="#">Servizi</a>
+        <a href="informazioniAggiuntive.html">Informazioni Aggiuntive</a>
+        <a href="#">Contatti</a>
+    </nav>
+
+    <form>
+        <label for="data">Data dell'appuntamento:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="ora">Ora dell'appuntamento:</label>
+        <input type="time" id="ora" name="ora" required>
+
+        <button type="submit">Prenota Appuntamento</button>
+    </form>
+
+    <section>
+        <h2>Servizi Offerti</h2>
+        <ul>
+            <li>Medicina Generale</li>
+            <li>Pediatria</li>
+            <li>Cardiologia</li>
+            <li>Dermatologia</li>
+            <li>Ortopedia</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Chi Siamo</h2>
+        <p>Lo Studio Medico XYZ si impegna a fornire servizi medici di alta qualità per migliorare la salute e il benessere dei nostri pazienti.</p>
+    </section>
+
+    <section>
+        <h2>Contatti</h2>
+        <p>Indirizzo: Via delle Cure, 123 - 00123 Città</p>
+        <p>Email: info@studiomedicoxyz.it</p>
+        <p>Telefono: 0123-456789</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Studio Medico XYZ. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
